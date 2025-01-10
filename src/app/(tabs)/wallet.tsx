@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import WalletCard from '../../components/wallet/wallet-card'
 import ContextMenuCard from '../../components/wallet/contextmenu'
 import EmptyWallet from '../../components/wallet/emptywallet'
+import { styles } from '../../constant'
 
 interface Wallet {
   id: number
@@ -14,7 +15,7 @@ interface Wallet {
 
 const emptyWallet: Wallet[] = []
 
-const wallets: Wallet = [
+const wallets: Wallet[] = [
   {
     id: 1,
     amount: 234231,
@@ -54,14 +55,18 @@ const wallets: Wallet = [
 
 const Wallet = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView
+      style={{ flex: 1 }}
+      edges={['top', 'left', 'right']}
+    >
       <View style={styles.body}>
         <Text style={styles.heading}>Wallets</Text>
 
         <View style={styles.container}>
           <FlatList
+            showsVerticalScrollIndicator={false}
             contentContainerStyle={
-              emptyWallet.length === 0
+              wallets.length === 0
                 ? {
                     alignContent: 'center',
                     justifyContent: 'center',
@@ -69,7 +74,7 @@ const Wallet = () => {
                   }
                 : {}
             }
-            data={emptyWallet}
+            data={wallets}
             ListEmptyComponent={() => <EmptyWallet />}
             renderItem={({ item }) => (
               <ContextMenuCard>
@@ -90,18 +95,4 @@ const Wallet = () => {
 
 export default Wallet
 
-const styles = StyleSheet.create({
-  body: {
-    paddingHorizontal: 30,
-    paddingTop: 20,
-    flex: 1,
-  },
-  heading: {
-    fontSize: 20,
-  },
-  container: {
-    gap: 10,
-    marginTop: 10,
-    flex: 1,
-  },
-})
+const walletStyles = StyleSheet.create({})

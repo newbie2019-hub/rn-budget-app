@@ -8,6 +8,19 @@ export const theme = {
 }
 
 export const styles = StyleSheet.create({
+  heading: {
+    fontSize: 20,
+  },
+  container: {
+    gap: 10,
+    marginTop: 10,
+    flex: 1,
+  },
+  body: {
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    flex: 1,
+  },
   subHeading: {
     color: theme.primarySubHeading
   },

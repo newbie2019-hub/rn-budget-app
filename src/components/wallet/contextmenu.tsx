@@ -22,6 +22,9 @@ const ContextMenuCard = ({
         <ContextMenu.Item key="add-budget">
           <ContextMenu.ItemTitle>Add Budget</ContextMenu.ItemTitle>
         </ContextMenu.Item>
+        <ContextMenu.Item key="update">
+          <ContextMenu.ItemTitle>Update</ContextMenu.ItemTitle>
+        </ContextMenu.Item>
         <ContextMenu.Item key="remove-wallet">
           <ContextMenu.ItemTitle>Remove</ContextMenu.ItemTitle>
         </ContextMenu.Item>

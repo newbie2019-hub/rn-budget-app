@@ -1,6 +1,6 @@
-import { Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
 import Entypo from '@expo/vector-icons/Entypo'
-import { styles, theme } from '../../constant'
+import { theme } from '../../constant'
 
 const EmptyWallet = () => {
   return (
@@ -27,7 +27,7 @@ const EmptyWallet = () => {
       <Text
         style={{
           color: 'gray',
-          marginTop: 6,
+          marginTop: 8,
           textAlign: 'center',
         }}
         numberOfLines={2}
@@ -35,6 +35,9 @@ const EmptyWallet = () => {
         Add a wallet to your account and start tracking {'\n'} your financial
         journey today
       </Text>
+      <View style={{ marginTop: 26 }}>
+        <Button title="Add Wallet" />
+      </View>
     </View>
   )
 }
