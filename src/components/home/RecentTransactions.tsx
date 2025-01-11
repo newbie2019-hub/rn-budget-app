@@ -8,18 +8,6 @@ const transactions = [
     amount: 6000,
     createdAt: 'Jan 05, 2025',
   },
-  {
-    id: '2',
-    category: 'Grocery',
-    amount: 10_000,
-    createdAt: 'Jan 05, 2025',
-  },
-  {
-    id: '3',
-    category: 'Electricity Bill',
-    amount: 4500,
-    createdAt: 'Dec 31, 2024',
-  },
 ]
 
 const RecentTransactions = () => {

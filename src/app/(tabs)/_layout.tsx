@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router'
 import { routes } from '../../constant/routes'
 import { theme } from '../../constant'
+import { View } from 'react-native'
 
 export default function TabLayout() {
   return (

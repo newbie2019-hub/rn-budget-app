@@ -5,7 +5,6 @@ import Heading from './Heading'
 import ActiveWallet from './ActiveWallet'
 import RecentTransactions from './RecentTransactions'
 import { theme } from '../../constant'
-import { ScrollView } from 'react-native'
 
 const ITEMS: any[] = WeekCalendarData
 
