@@ -81,16 +81,3 @@ export const WeekCalendarData = [
     data: []
   }
 ];
-
-export function getMarkedDates() {
-  const marked: any = {};
-
-  agendaItems.forEach(item => {
-    if (item.data && item.data.length > 0 && (!item.data[0])) {
-      marked[item.title] = {marked: true};
-    } else {
-      marked[item.title] = {disabled: true};
-    }
-  });
-  return marked;
-}

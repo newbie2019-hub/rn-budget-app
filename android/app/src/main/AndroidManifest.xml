@@ -26,6 +26,7 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="newbie.dev"/>
         <data android:scheme="com.anonymous.budgetapp"/>
+        <data android:scheme="exp+budget-app"/>
       </intent-filter>
     </activity>
   </application>

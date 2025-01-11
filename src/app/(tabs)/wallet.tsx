@@ -1,8 +1,8 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import WalletCard from '../../components/wallet/wallet-card'
-import ContextMenuCard from '../../components/wallet/contextmenu'
-import EmptyWallet from '../../components/wallet/emptywallet'
+import WalletCard from '../../components/wallet/CardWallet'
+import ContextMenuCard from '../../components/wallet/ContextMenu'
+import EmptyWallet from '../../components/wallet/EmptyWallet'
 import { styles } from '../../constant'
 
 interface Wallet {

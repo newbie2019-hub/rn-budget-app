@@ -1,23 +1,17 @@
-import React, { useState } from 'react'
-import {
-  CalendarProvider,
-  ExpandableCalendar,
-  WeekCalendar,
-} from 'react-native-calendars'
-import { WeekCalendarData } from '../../constant/theme'
+import React from 'react'
+import { CalendarProvider, ExpandableCalendar } from 'react-native-calendars'
+import { WeekCalendarData } from '../../helpers/date'
 import Heading from './Heading'
 import ActiveWallet from './ActiveWallet'
 import RecentTransactions from './RecentTransactions'
 import { theme } from '../../constant'
+import { ScrollView } from 'react-native'
 
 const ITEMS: any[] = WeekCalendarData
 
 const ExpandedCalendar = () => {
   return (
-    <CalendarProvider
-      showTodayButton
-      date={ITEMS[1]?.title}
-    >
+    <CalendarProvider date={ITEMS[1]?.title}>
       <Heading />
       <ExpandableCalendar
         allowShadow={false}

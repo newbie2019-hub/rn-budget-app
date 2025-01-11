@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import WalletCard from '../wallet/wallet-card'
+import WalletCard from '../wallet/CardWallet'
 import { styles } from '../../constant'
 import AntDesign from '@expo/vector-icons/AntDesign'
 

@@ -3,7 +3,8 @@ import { StyleSheet } from "react-native"
 export const theme = {
   primary: '#2563eb',
   primarySubHeading: '#d5dff5',
-
+  error: '#b91c1c',
+  subtleBlack: '#2b2b2b',
   white: '#fff',
 }
 

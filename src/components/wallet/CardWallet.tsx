@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 import { styles, theme } from '../../constant'
 import { useState } from 'react'
 import Feather from '@expo/vector-icons/Feather'
-import { mask } from '../../constant/helpers'
+import { mask } from '../../helpers'
 import { formatCurrency } from 'react-native-format-currency'
 
 interface Wallet {
