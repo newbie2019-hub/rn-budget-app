@@ -5,6 +5,7 @@ import Heading from './Heading'
 import ActiveWallet from './ActiveWallet'
 import RecentTransactions from './RecentTransactions'
 import { theme } from '../../constant'
+import { Link } from 'expo-router'
 
 const ITEMS: any[] = WeekCalendarData
 

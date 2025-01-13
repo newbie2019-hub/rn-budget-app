@@ -58,13 +58,13 @@ const Transaction = () => {
                 color="black"
               />
               <View>
-                <Text>Groceries</Text>
-                <Text style={{ fontSize: 12, color: 'gray' }}>
+                <Text style={{ fontSize: 18 }}>Groceries</Text>
+                <Text style={{ fontSize: 14, color: 'gray' }}>
                   Jan 11, 2024 at 2:24 PM
                 </Text>
               </View>
             </View>
-            <Text>-₱7,000</Text>
+            <Text style={{ fontSize: 18 }}>-₱7,000</Text>
           </View>
         </Pressable>
       </ReanimatedSwipeable>

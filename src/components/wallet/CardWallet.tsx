@@ -27,7 +27,7 @@ const WalletCard = ({
 
   return (
     <View style={cardStyle.card}>
-      <Text style={styles.subHeading}>Current Balance</Text>
+      <Text style={[styles.subHeading, { fontSize: 16 }]}>Current Balance</Text>
       <View
         style={{
           flexDirection: 'row',
@@ -35,7 +35,10 @@ const WalletCard = ({
           gap: 10,
         }}
       >
-        <Text style={[cardStyle.amount, styles.white]}>
+        <Text
+          style={[cardStyle.amount, styles.white]}
+          adjustsFontSizeToFit
+        >
           {shown
             ? valueFormattedWithSymbol
             : symbol + mask(valueFormattedWithoutSymbol)}
@@ -43,7 +46,7 @@ const WalletCard = ({
         <Pressable onPress={() => setShown(!shown)}>
           <Feather
             name={shown ? 'eye' : 'eye-off'}
-            size={18}
+            size={19}
             color="white"
           />
         </Pressable>
@@ -79,7 +82,7 @@ const cardStyle = StyleSheet.create({
     marginVertical: 6,
   },
   amount: {
-    fontSize: 40,
+    fontSize: 48,
     fontWeight: '600',
   },
 })

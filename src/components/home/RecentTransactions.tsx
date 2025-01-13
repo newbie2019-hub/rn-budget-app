@@ -1,5 +1,6 @@
 import { View, Text, FlatList } from 'react-native'
 import Transaction from '../Transaction'
+import { theme } from '../../constant'
 
 const transactions = [
   {
@@ -13,7 +14,9 @@ const transactions = [
 const RecentTransactions = () => {
   return (
     <View style={{ paddingHorizontal: 25, paddingVertical: 6 }}>
-      <Text style={{ fontSize: 16, color: 'gray' }}>Recent Transactions</Text>
+      <Text style={{ fontSize: theme.subHeading, color: theme.subtleBlack }}>
+        Recent Transactions
+      </Text>
       <View
         style={{
           height: 1,

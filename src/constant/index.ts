@@ -5,7 +5,16 @@ export const theme = {
   primarySubHeading: '#d5dff5',
   error: '#b91c1c',
   subtleBlack: '#2b2b2b',
+  gray: '#6e6e6e',
+  pressedGray: '#d1d1d1',
   white: '#fff',
+
+  // Font Sizes
+  heading: 18,
+  subHeading: 18,
+
+  // Onboarding
+  onBoardingHeading: 34
 }
 
 export const styles = StyleSheet.create({

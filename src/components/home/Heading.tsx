@@ -7,18 +7,18 @@ const Heading = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={{ fontSize: 24 }}>Hi, John!</Text>
-        <Text style={{ color: 'gray', fontSize: 16 }}>Good morning!</Text>
+        <Text style={{ fontSize: 26 }}>Hi, John!</Text>
+        <Text style={{ color: 'gray', fontSize: 18 }}>Good morning!</Text>
       </View>
       <View style={{ flexDirection: 'row', gap: 8 }}>
         <Entypo
           name="cog"
-          size={21}
+          size={22}
           color={theme.subtleBlack}
         />
         <MaterialIcons
           name="notifications-none"
-          size={21}
+          size={22}
           color={theme.subtleBlack}
         />
       </View>
